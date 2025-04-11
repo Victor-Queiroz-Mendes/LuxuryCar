@@ -80,240 +80,235 @@
     </nav>
   </footer>
   <style>
-    body {
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-          }
-          
-          body {
-            background-color: #0a0a0a;
-            color: #fff;
-          }
-          
-          header {
-            background-color: #101820;
-            padding: 20px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-          }
-          
-          header h1 {
-            color: #00aaff;
-            font-size: 2rem;
-          }
-          
-          nav a {
-            color: white;
-            margin-left: 20px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-          }
-          
-          nav a:hover {
-            color: #00aaff;
-          }
-          
-          .hero {
-            padding: 60px 40px;
-            text-align: center;
-          }
-          
-          .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-          }
-          
-          .hero p {
-            font-size: 1.2rem;
-            color: #ccc;
-          }
-          
-          .car-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            padding: 40px;
-          }
-          
-          .card {
-            background-color: #111;
-            border-radius: 12px;
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-            cursor: pointer;
-          }
-          
-          .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 170, 255, 0.3);
-          }
-          
-          .card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-          }
-          
-          .card-body {
-            padding: 20px;
-          }
-          
-          .card-body h3 {
-            color: #00aaff;
-            margin-bottom: 10px;
-          }
-          
-          .card-body p {
-            color: #ccc;
-            font-size: 0.95rem;
-          }
-          
-          .btn {
-            margin-top: 15px;
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #00aaff;
-            color: #fff;
-            border: none;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-          }
-          
-          .btn:hover {
-            background-color: #008fcc;
-          }
-          
-        
-          /* Adicionando o estilo para o grid de carros */
-        .car-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px; /* Aumentando o espaçamento entre os cards */
-            padding: 20px;
-          }
-          
-          /* Estilo do card */
-          .card {
-            background-color: #222; /* Cor de fundo do card */
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            height: 350px; /* Altura fixa para os cards */
-            width: 380px; /* Largura ajustada dos cards */
-            margin: 0 auto; /* Centralizando os cards */
-          }
-          
-          .card:hover {
-            transform: scale(1.05);
-          }
-          
-          .card img {
-            width: 100%;
-            height: 200px; /* Altura das imagens */
-            object-fit: cover; /* Fazendo a imagem cobrir a área do container */
-          }
-          
-          .card-body {
-            padding: 15px;
-            height: 150px; /* Tamanho fixo da área de descrição */
-          }
-          
-          .card-body h3 {
-            margin: 0;
-            font-size: 1.2em;
-            color: #fff; /* Cor do título */
-          }
-          
-          .card-body p {
-            font-size: 1em;
-            color: #ddd; /* Cor do texto */
-          }
-          
-          .btn {
-            display: inline-block;
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-            transition: background-color 0.3s ease;
-          }
-          
-          .btn:hover {
-            background-color: #0056b3;
-          }
-          
-        
-          /* Estilo do rodapé */
-        footer {
-            background-color: #222; /* Cor de fundo do rodapé */
-            color: #fff; /* Cor do texto */
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px; /* Espaço acima do rodapé */
-          }
-          
-          footer nav a {
-            color: #ddd;
-            text-decoration: none;
-            margin: 0 10px;
-          }
-          
-          footer nav a:hover {
-            color: #007bff; /* Cor do link quando hover */
-          }
-          
-        
-          /* Estilo da topbar fixa */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #000; /* Cor de fundo da topbar */
-            color: #fff;
-            padding: 10px 0;
-            z-index: 1000; /* Garante que fique sobre outros elementos */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar a topbar */
-          }
-          
-          header h1 {
-            margin-left: 20px;
-            font-size: 1.8em;
-            display: inline-block;
-          }
-          
-          nav {
-            display: inline-block;
-            margin-left: 40px;
-          }
-          
-          nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 500;
-          }
-          
-          nav a:hover {
-            color: #007bff;
-          }
-          
-          /* Adicionando um padding superior para o conteúdo não ficar atrás da topbar */
-          body {
-            padding-top: 60px; /* Ajuste de acordo com a altura da sua topbar */
-          }
-          
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
     }
+
+    body {
+        background-color: #0a0a0a;
+        color: #fff;
+    }
+          
+    header {
+        background-color: #101820;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+          
+    header h1 {
+        color: #00aaff;
+        font-size: 2rem;
+    }
+          
+    nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+          
+    nav a:hover {
+        color: #00aaff;
+    }
+          
+    .hero {
+        padding: 60px 40px;
+        text-align: center;
+    }
+          
+    .hero h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+          
+    .hero p {
+        font-size: 1.2rem;
+        color: #ccc;
+    }
+          
+    .car-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        padding: 40px;
+    }
+          
+    .card {
+        background-color: #111;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+    }
+          
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 170, 255, 0.3);
+    }
+          
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+          
+    .card-body {
+        padding: 20px;
+    }
+          
+    .card-body h3 {
+        color: #00aaff;
+        margin-bottom: 10px;
+    }
+          
+    .card-body p {
+        color: #ccc;
+        font-size: 0.95rem;
+    }
+          
+    .btn {
+        margin-top: 15px;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #00aaff;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+          
+    .btn:hover {
+        background-color: #008fcc;
+    }
+          
+    /* Adicionando o estilo para o grid de carros */
+    .car-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px; /* Aumentando o espaçamento entre os cards */
+        padding: 20px;
+    }
+          
+    /* Estilo do card */
+    .card {
+        background-color: #222; /* Cor de fundo do card */
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        height: 350px; /* Altura fixa para os cards */
+        width: 380px; /* Largura ajustada dos cards */
+        margin: 0 auto; /* Centralizando os cards */
+    }
+          
+    .card:hover {
+        transform: scale(1.05);
+    }
+          
+    .card img {
+        width: 100%;
+        height: 200px; /* Altura das imagens */
+        object-fit: cover; /* Fazendo a imagem cobrir a área do container */
+    }
+          
+    .card-body {
+        padding: 15px;
+        height: 150px; /* Tamanho fixo da área de descrição */
+    }
+          
+    .card-body h3 {
+        margin: 0;
+        font-size: 1.2em;
+        color: #fff; /* Cor do título */
+    }
+          
+    .card-body p {
+        font-size: 1em;
+        color: #ddd; /* Cor do texto */
+    }
+          
+    .btn {
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
+    }
+          
+    .btn:hover {
+        background-color: #0056b3;
+    }
+          
+    /* Estilo do rodapé */
+    footer {
+        background-color: #222; /* Cor de fundo do rodapé */
+        color: #fff; /* Cor do texto */
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px; /* Espaço acima do rodapé */
+    }
+          
+    footer nav a {
+        color: #ddd;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+          
+    footer nav a:hover {
+        color: #007bff; /* Cor do link quando hover */
+    }
+          
+    /* Estilo da topbar fixa */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #000; /* Cor de fundo da topbar */
+        color: #fff;
+        padding: 10px 0;
+        z-index: 1000; /* Garante que fique sobre outros elementos */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar a topbar */
+    }
+          
+    header h1 {
+        margin-left: 20px;
+        font-size: 1.8em;
+        display: inline-block;
+    }
+          
+    nav {
+        display: inline-block;
+        margin-left: 40px;
+    }
+          
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: 500;
+    }
+          
+    nav a:hover {
+        color: #007bff;
+    }
+          
+    /* Adicionando um padding superior para o conteúdo não ficar atrás da topbar */
+    body {
+        padding-top: 60px; /* Ajuste de acordo com a altura da sua topbar */
+    }
+          
   </style>
   <script src="assets/js/script.js"></script>
 </body>
