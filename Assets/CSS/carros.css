@@ -1,0 +1,65 @@
+.car-details-page {
+  display: flex;
+  height: 100vh;
+  background-color: #0a0a0a; /* fundo preto */
+  color: #f1f1f1; /* texto claro */
+}
+
+.car-image-half {
+  width: 50%;
+  overflow: hidden;
+}
+
+.car-image-half img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.car-info-half {
+  width: 50%;
+  padding: 60px;
+  background-color: #111; /* tom mais suave de preto */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.car-info-half h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #00aaff; /* azul claro */
+}
+
+.car-info-half p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.car-info-half ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.car-info-half ul li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+.car-info-half .btn {
+  display: inline-block;
+  background-color: #007bff; /* azul forte */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.car-info-half .btn:hover {
+  background-color: #0056b3; /* azul mais escuro no hover */
+}
